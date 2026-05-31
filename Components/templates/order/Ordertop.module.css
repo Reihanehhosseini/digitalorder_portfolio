@@ -1,0 +1,115 @@
+.ordertop {
+  width: 100%;
+}
+.ordertop_btn {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  border-bottom: 1px solid #ced7df;
+  /* padding: 15px 0; */
+  gap: 50px;
+}
+.ordertop_btn button {
+  border: none;
+  background-color: inherit;
+  font-weight: 400;
+  font-size: 14px;
+  width: 139px;
+  letter-spacing: 0%;
+  text-align: center;
+  color: var(--gray);
+  line-height: 100%;
+  cursor: pointer;
+  padding: 15px 10px;
+}
+.ordertop_section {
+  padding: 15px 0;
+}
+.order_title {
+  border-bottom: 1px solid #ced7df;
+  padding: 15px 0;
+}
+.order_food {
+  display: flex;
+  padding: 20px 0;
+  justify-content: space-between;
+}
+.order_food_left {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+.order_food_img img {
+  width: 60px;
+  height: 60px;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+.order_food_desc {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 8px;
+}
+.order_food_desc h4 {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0px;
+  margin: 0 !important;
+  color: var(--background-color-dark);
+}
+.order_food_desc div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.order_food_desc div span:first-child {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+.order_food_desc div span:last-child {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: var(--Light-gray);
+}
+.order_food_code {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: right;
+  text-decoration: underline;
+  text-decoration-style: solid;
+  text-decoration-thickness: 0%;
+  color: var(--Light-gray);
+}
+.order_track {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5px;
+}
+.order_track button {
+  border: none;
+  width: 139px;
+  height: 38px;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 100%;
+  letter-spacing: 0px;
+  text-align: center;
+}

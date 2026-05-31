@@ -1,0 +1,30 @@
+.menuheader {
+  max-width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1;
+}
+.menuheader_left {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.menuheader_icon {
+  width: 100%;
+  /* background-color: #ecf0f4; */
+  width: 45px;
+  height: 45px;
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+  cursor: pointer;
+  display: flex;
+  gap: 1rem;
+}
+.menuheader_icon_title {
+  font-weight: 500;
+  font-size: 17px;
+}

@@ -1,0 +1,9 @@
+.btnseeall{
+    border: none;
+    background-color: inherit;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 16px;
+    color: #333333;
+}

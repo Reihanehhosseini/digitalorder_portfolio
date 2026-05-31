@@ -1,0 +1,14 @@
+.info {
+  max-width: 100%;
+  padding: 50px 21px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.edit {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #ff7622;
+  margin-right: 20px !important;
+}

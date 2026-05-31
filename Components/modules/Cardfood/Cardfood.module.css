@@ -1,0 +1,83 @@
+.cardfood {
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  list-style-type: none;
+}
+.cardfood_img {
+  width: 102px;
+  height: 102px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cardfood_img img{
+  width: 70px;
+  height: 70px;
+}
+.cardfood_desc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 10px 0 10px 10px;
+  gap: 5px;
+  
+}
+.cardfood_desc span:first-child {
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0%;
+  color: var(--font-color);
+}
+.cardfood_desc span:nth-child(2) {
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: 0px;
+  text-transform: capitalize;
+  color: #646982 !important;
+}
+.cardfood_desc span:last-child {
+  font-weight: 700;
+  font-size: 17.49px;
+  letter-spacing: 0%;
+  text-align: right;
+  vertical-align: middle;
+  margin-left: 8px;
+  color: var(--font-color);
+}
+.cardfood_rate {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: var(--orange);
+}
+.cardfood_rate span:first-child {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  text-align: center;
+  gap: 5px;
+  font-weight: 700;
+  font-size: 13.67px;
+  letter-spacing: 0%;
+}
+.cardfood_rate svg {
+  width: 17px;
+  height: 17px;
+}
+.cardfood_rate span:last-child {
+  background-color: #ff762233;
+  padding: 5px 15px;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+  font-weight: 400;
+  font-size: 11px;
+  letter-spacing: 0%;
+  vertical-align: middle;
+
+}

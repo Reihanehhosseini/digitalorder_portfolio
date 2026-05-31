@@ -1,0 +1,7 @@
+.order {
+  max-width: 100%;
+  padding: 50px 21px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}

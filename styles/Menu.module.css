@@ -1,0 +1,69 @@
+.menu{
+max-width: 100%;
+padding: 50px 21px;
+display: flex;
+flex-direction: column;
+gap: 30px;
+}
+.menuheader_icon{
+    background-color: #ECF0F4;
+    width: 45px;
+    height: 45px;
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+    cursor: pointer;
+}
+.menuprofile_p_element{
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 13px;
+    line-height: 24px;
+    color: #a0a5ba;
+    padding-right: 10px;
+    margin: 0;
+  }
+  .bell_menu {
+    font-size: 15px;
+    font-weight: 400;
+    color: #676767;
+    background-color: var(--input-color);
+    margin-left: 10px;
+    padding: 5px 7px;
+    border-radius: 13px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 13px;
+    -ms-border-radius: 13px;
+    -o-border-radius: 13px;
+  
+  }
+  .bell_menu span:first-child{
+  font-weight: 400;
+  font-size: 9.77px;
+  letter-spacing: 0px;
+  text-transform: capitalize;
+  
+  }
+  .bell_menu img{
+    transform: translateY(3px);
+    -webkit-transform: translateY(3px);
+    -moz-transform: translateY(3px);
+    -ms-transform: translateY(3px);
+    -o-transform: translateY(3px);
+    margin-left: 2px;
+  }
+  @media screen and (max-width: 402px) {
+    .menuprofile_p_element{
+      padding-right: 0;
+      
+    }
+  }
+  @media screen and (max-width: 375px) {
+    .menuprofile_p_element{
+      font-size: 12px;
+      line-height: 18px;
+      
+    }
+  }

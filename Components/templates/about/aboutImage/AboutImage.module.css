@@ -1,0 +1,44 @@
+.aboutImage {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.aboutImage_big {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.aboutImage_big img {
+  /* max-width: 400px; */
+  max-width: 400px;
+  width: 100%;
+  height: 250px;
+  border-radius: 32px;
+  -webkit-border-radius: 32px;
+  -moz-border-radius: 32px;
+  -ms-border-radius: 32px;
+  -o-border-radius: 32px;
+}
+.aboutImage_swiper {
+  width: 100%;
+  
+}
+.aboutImage_swiper img {
+  width: 65px;
+  height: 67px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  position: relative;
+}
+.aboutImage_swiperslide {
+  width: auto !important;
+}
+.nextButton {
+  position: absolute;
+  top: 20px;
+  z-index: 10;
+  right: -2px;
+}

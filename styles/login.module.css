@@ -1,0 +1,127 @@
+.loginpage {
+  max-width: 100%;
+  background-color: var(--background-color-dark);
+  height: 100vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.menuheader_login {
+  padding: 50px 21px;
+  z-index: 1;
+}
+.loginform form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.form_input {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.form_input span{
+    color: #181C2E;
+
+font-weight: 400;
+font-size: 13px;
+line-height: 100%;
+letter-spacing: 0%;
+text-transform: uppercase;
+
+}
+.form_input input {
+  border: none;
+  background-color: #f0f5fa;
+  padding: 20px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  color: var(--gray);
+  outline: 0;
+}
+.input_password {
+  background-color: #f0f5fa;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 20px;
+}
+.remember {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.checkbox {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.remember span {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 100%;
+  letter-spacing: 0px;
+  color: #7e8a97;
+}
+.remember a {
+  text-decoration: none;
+  list-style-type: none;
+  color: var(--orange);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0px;
+}
+.formbutton {
+  width: 100%;
+  background-color: var(--orange);
+  border: none;
+  padding: 20px 0;
+  color: #fff;
+  border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 10px;
+}
+.account {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.account span{
+color: #646982;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+letter-spacing: 0px;
+text-align: center;
+vertical-align: middle;
+
+}
+.account a {
+  margin-left: 10px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0px;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--orange);
+}

@@ -1,0 +1,59 @@
+.LanguageList {
+  background-color: var(--bg-link);
+  border-radius: 16px;
+  -webkit-border-radius: 16px;
+  -moz-border-radius: 16px;
+  -ms-border-radius: 16px;
+  -o-border-radius: 16px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  
+  justify-content: center;
+}
+.LanguageListHeader {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.LanguageListIcon {
+  background-color: #fff;
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.LanguageListIcon svg {
+  fill: #00c0e8;
+  stroke: #00c0e8;
+  width: 22px;
+  height: 22px;
+}
+.LanguageListSelect {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  transition: all 50ms linear;
+  -webkit-transition: all 50ms linear;
+  -moz-transition: all 50ms linear;
+  -ms-transition: all 50ms linear;
+  -o-transition: all 50ms linear;
+}
+.showLanguage {
+  opacity: 1;
+  visibility: visible;
+  height: auto;
+}
+.hiddenLanguage {
+
+  opacity: 0;
+  visibility: hidden;
+  height: 0;
+
+}

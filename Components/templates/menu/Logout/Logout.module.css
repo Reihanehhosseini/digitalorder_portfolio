@@ -1,0 +1,37 @@
+.logout {
+  width: 100%;
+}
+.logout button {
+  padding: 20px;
+  width: 100%;
+  background-color: var(--bg-link);
+  border: none;
+  border-radius: 16px;
+  -webkit-border-radius: 16px;
+  -moz-border-radius: 16px;
+  -ms-border-radius: 16px;
+  -o-border-radius: 16px;
+  font-weight: 400;
+  font-size: 15px;
+  letter-spacing: 0%;
+  color: #32343e;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.logout_list_left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.logout_list_left span:first-child {
+    background-color: #fff;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+  }

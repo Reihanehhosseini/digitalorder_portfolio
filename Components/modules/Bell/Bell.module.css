@@ -1,0 +1,19 @@
+.bell {
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    padding: 7px 11px;
+    gap: 5px;
+    cursor: pointer;
+  }
+  .bell span {
+    font-size: 15px;
+    font-weight: 400;
+    color: #676767;
+  }
+  .bellicon {
+    width: 30px;
+
+  }

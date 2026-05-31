@@ -1,0 +1,36 @@
+.contactInfo {
+    
+  width: 100%;
+}
+.contactInfo h1 {
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 20px;
+  line-height: 100%;
+  letter-spacing: -0.33px;
+  color: #000;
+  margin-top: 0 !important;
+}
+.contactInfo_section{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 13px;
+}
+.contactInfo_section span{
+font-weight: 400;
+font-style: Regular;
+font-size: 16px;
+letter-spacing: -0.33px;
+color: #000;
+
+}
+.contactInfo_section p , .contactInfo_section div{
+font-weight: 400;
+font-style: Regular;
+font-size: 16px;
+letter-spacing: -0.33px;
+color: var(--gray);
+margin: 5px 0 0 0  !important;
+
+}

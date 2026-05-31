@@ -1,0 +1,14 @@
+.footercart {
+  max-width: 100%;
+  background-color: var(--background-color);
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-top-right-radius: 24px;
+  border-top-left-radius: 24px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}

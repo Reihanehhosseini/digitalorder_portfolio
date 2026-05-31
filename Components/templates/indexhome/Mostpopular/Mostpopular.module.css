@@ -1,0 +1,24 @@
+.mostpopular {
+  width: 100%;
+  margin-top: 20px;
+}
+.header_mostpopular {
+  display: flex;
+  justify-content: space-between;
+}
+.most {
+  font-size: 20px;
+}
+.bottom_mpstpopular {
+  width: 100%;
+  gap: 10px;
+  height: 250px;
+  margin-top: 60px;
+  overflow-x: hidden;
+}
+.bottom_mpstpopular .swiper {
+  width: 100%;
+}
+.bottom_mpstpopular::-webkit-scrollbar {
+  display: none;
+}

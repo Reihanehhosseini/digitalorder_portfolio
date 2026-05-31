@@ -1,0 +1,8 @@
+.imgdetail {
+  width: 100%;
+}
+.imgdetail img {
+  width: 100%;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}

@@ -1,0 +1,44 @@
+.header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.shopping_basket{
+    background-color: var(--background-color-dark);
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+    position: relative;
+}
+.humberger_menu{
+    cursor: pointer;
+}
+.shopping_basket{
+    cursor: pointer;
+}
+.shopping_basket svg{
+    width: 20px;
+    height: 20px;
+}
+.count_shopping{
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background-color: var(--orange);
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+    top: -5px;
+    right: -5px;
+    color: #fff;
+}

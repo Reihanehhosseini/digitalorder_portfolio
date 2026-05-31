@@ -1,0 +1,13 @@
+.link_component {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style-type: none;
+    text-decoration: none;
+    color: var(--font-color);
+  }
+  .menulist_list_left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }

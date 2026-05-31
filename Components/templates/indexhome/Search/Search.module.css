@@ -1,0 +1,20 @@
+.search{
+    max-width: 100%;
+    background-color: var(--input-color);
+    display: flex;
+    align-items: center;
+    text-align: center;
+    height: 62px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    padding: 0 20px !important;
+    gap: 10px;
+}
+.search input{
+    background-color: inherit;
+    border: none;
+    outline: none;
+}

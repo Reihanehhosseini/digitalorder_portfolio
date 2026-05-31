@@ -3,13 +3,24 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev --turbo",
     "build": "next build",
     "start": "next start"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^7.1.0",
+    "@fortawesome/free-solid-svg-icons": "^7.1.0",
+    "@fortawesome/react-fontawesome": "^3.1.0",
+    "i18next": "^25.7.2",
+    "next": "15.5.4",
+    "next-i18next": "^15.4.3",
+    "next-intl": "^4.5.6",
     "react": "19.1.0",
     "react-dom": "19.1.0",
-    "next": "15.5.4"
+    "react-i18next": "^16.4.0",
+    "react-icon": "^1.0.0",
+    "react-icons": "^5.5.0",
+    "react-rating": "^2.0.5",
+    "swiper": "^12.0.2"
   }
 }

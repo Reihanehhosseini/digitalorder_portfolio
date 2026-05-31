@@ -1,0 +1,39 @@
+.address_section{
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.adreess_section_item{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+}
+.adreess_section_item span{
+    width: 48px !important;
+
+}
+.address_section_location{
+    width: 100%;
+}
+.address_section_location_header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.location_icons{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.address_section_location_footer p{
+font-weight: 400;
+font-size: 14px;
+line-height: 100%;
+letter-spacing: 0px;
+color: var(--Light-gray);
+
+}

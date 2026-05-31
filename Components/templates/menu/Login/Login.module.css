@@ -1,0 +1,19 @@
+.login{
+    width: 100%;
+}
+.login span{
+font-weight: 500;
+font-style: Medium;
+font-size: 13px;
+line-height: 100%;
+letter-spacing: 0px;
+text-align: center;
+text-transform: capitalize;
+
+}
+.login a{
+    margin-left: 10px;
+    text-decoration: none;
+    list-style-type: none;
+    color: var(--orange);
+}
