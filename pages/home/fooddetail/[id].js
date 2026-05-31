@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "../../../styles/fooddetail.module.css";
-import Imgdetail from "@/Components/templates/fooddetail/Imgdetail/Imgdetail";
+import Imgdetail from "@/Components/templates/fooddetail/imgdetail/Imgdetail";
 import Menuheader from "@/Components/templates/menu/Menuheader/Menuheader";
 import Descdetail from "@/Components/templates/fooddetail/descdetail/Descdetail";
 import Feedback from "@/Components/templates/fooddetail/feedback/Feedback";
