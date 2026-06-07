@@ -22,13 +22,14 @@
   cursor: pointer;
 }
 .profileimg_img {
-  width: 100%;
-  height: 100%;
-  border-radius: 100%;
-  -webkit-border-radius: 100%;
-  -moz-border-radius: 100%;
-  -ms-border-radius: 100%;
-  -o-border-radius: 100%;
+  object-fit: cover;
+  width: 150px;
+  height: 150px;
+  border-radius: 150px;
+  -webkit-border-radius: 150px;
+  -moz-border-radius: 150px;
+  -ms-border-radius: 150px;
+  -o-border-radius: 150px;
 }
 .penicon {
   position: absolute;

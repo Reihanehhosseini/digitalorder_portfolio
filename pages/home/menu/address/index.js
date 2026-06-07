@@ -3,10 +3,12 @@ import styles from "../../../../styles/address.module.css";
 import Menuheader from "@/Components/templates/menu/Menuheader/Menuheader";
 import AddressPanel from "@/Components/templates/address/AddressPanel";
 import ButtonOrange from "@/Components/modules/ButtonOrange/ButtonOrange";
-import Link from "next/link";
 import { useRouter } from "next/router";
+import { useTranslation } from "next-i18next";
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 
 export default function address() {
+  const {t} = useTranslation()
   const router = useRouter();
 
   const clickOnBtnOrange = () => {
@@ -14,12 +16,19 @@ export default function address() {
   };
   return (
     <div className={styles.address}>
-      <Menuheader title="My Address" />
+      <Menuheader title={t("My Address")} />
       <AddressPanel />
       <ButtonOrange
-        title="ADD NEW ADDRESS"
+        title={t("ADD NEW ADDRESS")}
         clickOnBtnOrange={clickOnBtnOrange}
       />
     </div>
   );
 }
+ export async function getStaticProps({ locale }) {
+   return {
+     props: {
+       ...(await serverSideTranslations(locale, ["common"])),
+     },
+   };
+ }

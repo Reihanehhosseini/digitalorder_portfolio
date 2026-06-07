@@ -6,9 +6,10 @@
   gap: 30px;
 }
 .edit {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 24px;
   color: #ff7622;
   margin-right: 20px !important;
+}
+.edit svg{
+  width: 23px !important;
+  height: 23px !important;
 }

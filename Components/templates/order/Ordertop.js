@@ -1,22 +1,27 @@
 import React, { useState } from "react";
 import styles from "./Ordertop.module.css";
+import { useTranslation } from "next-i18next";
+
 
 export default function Ordertop() {
-  const [active, setActive] = useState("ongoing");
+  const {t} = useTranslation()
+  const [active, setActive] = useState("history");
 
   const onGoingOrder = [
     {
       id: 1,
-      category: "Food",
+      category: t("Food"),
       title: "Pizza Hut",
       price: 32.5,
       count: 3,
       code: 162432,
       img: "/images/food/pizza.jpg",
     },
+  ];
+  const historyOrder = [
     {
-      id: 2,
-      category: "Drink",
+      id: 1,
+      category: t("Food"),
       title: "mcDonald",
       price: 40.15,
       count: 2,
@@ -24,43 +29,23 @@ export default function Ordertop() {
       img: "/images/food/mcDonald.jpg",
     },
     {
-      id: 3,
-      category: "Drink",
-      title: "Pizza Hut",
+      id: 2,
+      category: t("Drink"),
+      title: "starbucks",
       price: 10.2,
       count: 1,
       code: 240112,
       img: "/images/food/starbucks.jpg",
     },
-  ];
-  const historyOrder = [
-      {
-        id: 1,
-        category: "Drink",
-        title: "mcDonald",
-        price: 40.15,
-        count: 2,
-        code: 242432,
-        img: "/images/food/mcDonald.jpg",
-      },
-      {
-        id: 2,
-        category: "Drink",
-        title: "Pizza Hut",
-        price: 10.2,
-        count: 1,
-        code: 240112,
-        img: "/images/food/starbucks.jpg",
-      },
-      {
-        id: 3,
-        category: "Food",
-        title: "Pizza Hut",
-        price: 32.5,
-        count: 3,
-        code: 162432,
-        img: "/images/food/pizza.jpg",
-      },
+    {
+      id: 3,
+      category: t("Food"),
+      title: "Pizza Hut",
+      price: 32.5,
+      count: 3,
+      code: 162432,
+      img: "/images/food/pizza.jpg",
+    },
   ];
   return (
     <div className={styles.ordertop}>
@@ -72,7 +57,7 @@ export default function Ordertop() {
           }}
           onClick={() => setActive("ongoing")}
         >
-          Ongoing
+          {t("ongoing")}
         </button>
         <button
           style={{
@@ -81,7 +66,7 @@ export default function Ordertop() {
           }}
           onClick={() => setActive("history")}
         >
-          History
+          {t("history")}
         </button>
       </div>
       {(active === "ongoing" ? onGoingOrder : historyOrder).map((order) => (
@@ -97,7 +82,9 @@ export default function Ordertop() {
                 <div>
                   <span>${order.price}</span>
                   <span>|</span>
-                  <span>{order.count} Items</span>
+                  <span>
+                    {order.count} {t("Items")}
+                  </span>
                 </div>
               </div>
             </div>
@@ -108,7 +95,7 @@ export default function Ordertop() {
               className={styles.track}
               style={{ backgroundColor: "#ff7622", color: "#fff" }}
             >
-              Track Order
+              {t("Track Order")}
             </button>
             <button
               className={styles.cancel}
@@ -118,7 +105,7 @@ export default function Ordertop() {
                 border: "1px solid #ff7622",
               }}
             >
-              Cancel
+              {t("Cancel")}
             </button>
           </div>
         </div>

@@ -9,9 +9,11 @@ export default function Language() {
   const router = useRouter();
 
   const switchLanguage = (lang) => {
-    router.push(router.asPath, router.asPath, { locale: lang });
-    console.log(router, lang, "hiiiiiiiiiii");
+    router.replace(router.asPath, router.asPath, { locale: lang });
   };
+  // console.log(router.locale);
+  // console.log(router.asPath);
+  
   return (
     <div>
       <div className={styles.Language}>
