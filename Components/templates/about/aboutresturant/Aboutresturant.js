@@ -19,11 +19,11 @@ export default function Aboutresturant() {
         </span>
         <span>
           <img src="/images/Delivery.png" alt="" />
-          Free
+          {t("free")}
         </span>
         <span>
           <img src="/images/Clock.png" alt="" />
-          20 min
+          20 {t("min")}
         </span>
       </div>
     </div>

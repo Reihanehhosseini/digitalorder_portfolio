@@ -19,12 +19,12 @@
     "About the Resturant": "About the Resturant",
     "Log out": "Log out",
     "Already have an account?": "Already have an account",
-    "Log in": "Log in",
+    "Login": "Login",
     "Are You Sure You Want To Log Out": "Are You Sure You Want To Log Out",
     "If you log out, your information will not be saved": "If you log out, your information will not be saved",
     "Cancel": "Cancel",
     "Please sign in to your existing account": "Please sign in to your existing account",
-    "USERNAME": "USERNAME",
+    "Username": "Username",
     "Password": "Password",
     "Remember me": "Remember me",
     "Forget Password": "Forget Password",
@@ -82,5 +82,9 @@
     "My Address":"My Address",
     "ADD NEW ADDRESS":"ADD NEW ADDRESS",
     "Home":"Home",
-    "Work":"Work"
+    "Work":"Work",
+    "min":"min",
+    "free":"free",
+    "Firstname":"Firstname",
+    "Lastname":"Lastname"
 }

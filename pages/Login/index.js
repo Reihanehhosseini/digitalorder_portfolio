@@ -7,23 +7,17 @@ import Ellipse from "@/Components/modules/Ellipse/Ellipse";
 import Link from "next/link";
 import { useState } from "react";
 import { useRouter } from "next/router";
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import { useTranslation } from "next-i18next";
 
 export default function LoginPage() {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const router = useRouter();
+  const { t } = useTranslation();
 
   const login = async (event) => {
     event.preventDefault();
-
-    const res = await fetch("https://digital-order.liara.run/v1/auth/login", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({ username, password }),
-    });
-    console.log(res);
   };
   return (
     <div className={styles.loginpage}>
@@ -32,28 +26,26 @@ export default function LoginPage() {
         <Menuheader />
       </div>
       <Loginheader
-        title="Log In"
-        desc="Please sign in to your existing account"
+        title={t("Login")}
+        desc={t("Please sign in to your existing account")}
       />
       <LoginForm>
         <form action="">
           <div className={styles.form_input}>
-            <span>USERNAME</span>
+            <span>{t("Username")}</span>
             <input
               type="text"
-              placeholder="username"
+              placeholder={t("Username")}
               value={username}
               onChange={(event) => setUsername(event.target.value)}
             />
           </div>
           <div className={styles.form_input}>
-            <span>PASSWORD</span>
+            <span>{t("Password")}</span>
             <div className={styles.input_password}>
               <input
                 type="password"
-                name=""
-                id=""
-                placeholder="password"
+                placeholder={t("Password")}
                 value={password}
                 onChange={(event) => setPassword(event.target.value)}
               />
@@ -80,22 +72,30 @@ export default function LoginPage() {
           <div className={styles.remember}>
             <div className={styles.checkbox}>
               <input type="checkbox" name="" id="" />
-              <span>Remember me</span>
+              <span>{t("Remember me")}</span>
             </div>
             <div>
-              <Link href="/Login/forgetpassword">Forget Password</Link>
+              <Link href="/Login/forgetpassword">{t("Forget Password")}</Link>
             </div>
           </div>
           <button className={styles.formbutton} onClick={login}>
-            LOG IN
+            {t("Login")}
           </button>
         </form>
         <div className={styles.account}>
           <span>
-            Don’t have an account??<a href="/signup">Sign Up</a>
+            {t("Don’t have an account")}??<a href="/signup">{t("Sign Up")}</a>
           </span>
         </div>
       </LoginForm>
     </div>
   );
+}
+
+export async function getStaticProps({ locale }) {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, ["common"])),
+    },
+  };
 }
