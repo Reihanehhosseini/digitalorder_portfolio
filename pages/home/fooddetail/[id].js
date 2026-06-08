@@ -7,9 +7,13 @@ import Feedback from "@/Components/templates/fooddetail/feedback/Feedback";
 import Footercart from "@/Components/modules/footercart/Footercart";
 import Minus from "@/Components/modules/Minus/Minus";
 import Plus from "@/Components/modules/Plus/Plus";
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import { allFoods, foodsMenu } from "@/data/db";
+import { useTranslation } from "next-i18next";
 
 
-export default function fooddetail() {
+export default function fooddetail({food}) {
+  const {t} = useTranslation()
   return (
     <div className={styles.fooddetail}>
       <Menuheader bgcolor="#fff" back={false}>
@@ -30,7 +34,7 @@ export default function fooddetail() {
       </Menuheader>
       <div className={styles.fooddetail_section}>
         <Imgdetail />
-        <Descdetail />
+        <Descdetail food={food} />
         <Feedback />
         <Footercart color="#F0F5FA">
           <div className={styles.footer_fooddetail}>
@@ -43,11 +47,35 @@ export default function fooddetail() {
               </div>
             </div>
             <div className={styles.addtocart}>
-              <button>ADD TO CART</button>
+              <button>{t("ADD TO CART")}</button>
             </div>
           </div>
         </Footercart>
       </div>
     </div>
   );
+}
+
+export async function getStaticPaths(){
+  const paths = foodsMenu.map((item)=>(
+    {params:{id: item.id}}
+  ))
+  return{
+    paths,
+    fallback:false
+  }
+
+}
+export async function getStaticProps({params, locale }) {
+  const{id}= params
+  const food = foodsMenu.find((item)=> item.id ===id)
+  if(!food){
+    return{notFound:true}
+  }
+  return {
+    props: {
+      food,
+      ...(await serverSideTranslations(locale, ["common"])),
+    },
+  };
 }

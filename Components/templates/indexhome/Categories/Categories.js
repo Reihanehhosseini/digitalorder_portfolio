@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import styles from "./Categories.module.css";
-import BtnSeeAll from "@/Components/modules/Button/BtnSeeAll";
 import Cardcategorie from "@/Components/modules/Cardcategorie/Cardcategorie";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -39,7 +38,6 @@ export default function Categories({ categorieFood }) {
     <div className={`${styles.allcategories} categorie`}>
       <div className={styles.header_categories}>
         <div className={styles.categories}>{t("All Categories")}</div>
-        <BtnSeeAll />
       </div>
       <div className={styles.bottom_categories}>
         <Swiper

@@ -1,8 +1,12 @@
 "use client"
 import React, { useState } from "react";
 import styles from "./Descdetail.module.css";
+import { useTranslation } from "next-i18next";
+
 
 export default function Descdetail() {
+const {t} = useTranslation()
+
   const [active, setActive] = useState(1);
   
   return (
@@ -15,19 +19,18 @@ export default function Descdetail() {
         </span>
         <span>
           <img src="/images/Delivery.png" alt="" />
-          Free
+          {t("free")}
         </span>
         <span>
           <img src="/images/Clock.png" alt="" />
-          20 min
+          20 {t("min")}
         </span>
       </div>
       <p>
-        Maecenas sed diam eget risus varius blandit sit amet non magna. Integer
-        posuere erat a ante venenatis dapibus posuere velit aliquet.
+        
       </p>
       <div className={styles.descdetail_size}>
-        <span>SIZE:</span>
+        <span>{t("size")}:</span>
         <span
           className={active === 1 ? styles.active : styles.size}
           onClick={() => {

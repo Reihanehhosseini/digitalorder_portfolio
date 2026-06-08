@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import styles from "./Mostpopular.module.css";
-import BtnSeeAll from "@/Components/modules/Button/BtnSeeAll";
 import Cardmost from "@/Components/modules/Cardmost/Cardmost";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -63,7 +62,6 @@ export default function Mostpopular({ allFoods }) {
     <div className={`${styles.mostpopular} popular`}>
       <div className={styles.header_mostpopular}>
         <div className={styles.most}>{t("Most Popular")}</div>
-        <BtnSeeAll />
       </div>
       <div className={styles.bottom_mpstpopular}>
         <Swiper

@@ -8,21 +8,21 @@
  
  const foodsMenu = [
    {
-     id: 1,
+     id: "1",
      name: "Chicken Thai Biriyani",
      images: "/images/food/Rectangle 1436.png",
      rating: 4.9,
      price: 60,
    },
    {
-     id: 2,
+     id: "2",
      name: "beef Thai Biriyani",
      images: "/images/food/Rectangle 1436(1).png",
      rating: 5,
      price: 100,
    },
    {
-     id: 3,
+     id: "3",
      name: "sirabi",
      images: "/images/food/Rectangle 1436(2).png",
      rating: 3,

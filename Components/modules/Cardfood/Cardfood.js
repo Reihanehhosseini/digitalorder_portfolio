@@ -5,10 +5,10 @@ import Image from "next/image";
 import { useTranslation } from "next-i18next";
 
 
-export default function Cardfood({ name, images, rating, _id, price }) {
+export default function Cardfood({ name, images, rating, id, price }) {
   const {t} = useTranslation()
   return (
-    <Link href={`/home/fooddetail/${_id}`} className={styles.cardfood}>
+    <Link href={`/home/fooddetail/${id}`} className={styles.cardfood}>
       <div className={styles.cardfood_img}>
         <Image src={images} alt={name} width={102} height={102} />
       </div>

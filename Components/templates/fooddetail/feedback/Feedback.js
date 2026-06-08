@@ -1,35 +1,41 @@
 import React from "react";
 import styles from "./Feedback.module.css";
 import Stars from "@/Components/modules/Stars/Stars";
+import { useTranslation } from "next-i18next";
+
 
 export default function Feedback() {
+  const {t} = useTranslation()
   const comments = [
     {
       id: 1,
       name: "sara",
       date: "20/12/2020",
-      shortcomment: "Awesome and Nice",
+      shortcomment: t("Awesome and Nice"),
       rate: 4,
-      longcomment:
+      longcomment: t(
         "This Food so tasty & delicious. Breakfast so fast Delivered in my place.",
+      ),
     },
     {
       id: 2,
       name: "jooki",
       date: "11/08/2025",
-      shortcomment: "Awesome and Nice",
+      shortcomment: t("Awesome and Nice"),
       rate: 3.5,
-      longcomment:
+      longcomment: t(
         "This Food so tasty & delicious. Breakfast so fast Delivered in my place.",
+      ),
     },
     {
       id: 3,
       name: "happy",
       date: "17/03/2024",
-      shortcomment: "Bad ",
+      shortcomment: t("Awesome and Nice"),
       rate: 1,
-      longcomment:
+      longcomment: t(
         "This Food so tasty & delicious. Breakfast so fast Delivered in my place.",
+      ),
     },
   ];
   return (
